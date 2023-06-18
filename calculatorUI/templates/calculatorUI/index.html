@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>POST Request Example</title>
+</head>
+<body>
+  <form action="api/" method="post">
+    {% csrf_token %}
+
+    <label for="data">firstValue:</label>
+    <input type="number" id="firstValue" name="firstValue" required>
+    <br>
+    <label for="data">secondValue:</label>
+    <input type="number" id="secondValue" name="secondValue" required>
+    <br>
+    <label for="data">operationName</label>
+    <input type="text" id="operationName" name="operationName" required>
+    <br>
+    <label for="data">firstValue:</label>
+    <input type="text" id="appName" name="appName" required>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
